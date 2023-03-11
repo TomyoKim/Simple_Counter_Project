@@ -51,13 +51,16 @@ function App() {
   return (
     <div className="App">
       <h1>Simple Counter</h1>
+
       <section>
         <input value={text} onChange={handleChangeText} />
       </section>
+
       <section>
         <Viewer count={count} />
         {count % 2 ===0 && <Even />}
       </section>
+      
       <section>
         <Controller handleSetCount = {handleSetCount} />
       </section>
